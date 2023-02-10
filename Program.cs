@@ -35,12 +35,10 @@ namespace AllCardsOnDeckCS
                 fullDeck[rightIndex] = leftCard;
             }
 
-            Console.WriteLine($"The deck is shuffled and the first two cards off the top of the deck are {fullDeck[0]} and {fullDeck[1]}.");
             // These lists are the empty player hands for Players 1 and 2 for ADVENTURE mode
             var player1Hand = new List<string>();
             var player2Hand = new List<string>();
 
-            Console.WriteLine("These cards go to Player 1.");
             //Draws 2 cards for each player and removes them from the deck, storing them in the player hands
             for (var cardDraw = 2; cardDraw > 0; cardDraw--)
             {
